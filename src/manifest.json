@@ -1,0 +1,39 @@
+{
+  "name": "Lie to Me for Amazon Chime",
+  "version": "1.0.0",
+  "description": "Google Chrome extension for the web version of Amazon Chime, which adds machine learning to recognize facial expressions",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/"
+  ],
+  "web_accessible_resources": [
+    "models/facemo.json",
+    "models/facemo.weights.bin"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://app.chime.aws/meetings/*"],
+      "css": [],
+      "js": [
+        "vendor/jquery.min.js",
+        "vendor/tf.min.js",
+        "vendor/tf-core.min.js",
+        "vendor/tf-converter.min.js",
+        "vendor/tf-backend-webgl.min.js",
+        "vendor/face-landmarks-detection.min.js",
+        "index.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "images/lie_to_me_16.png",
+    "32": "images/lie_to_me_32.png",
+    "64": "images/lie_to_me_64.png",
+    "128": "images/lie_to_me_128.png"
+  },
+  "manifest_version": 2
+}
