@@ -11,8 +11,9 @@ Google Chrome extension for the web version of Amazon Chime, which adds machine 
 
 ## Content Attribution
 
-* TensorFlow Expression Model and usage example by ![Raphael Mun](https://github.com/raphaelmun)
-* Icons made by ![Freepik](https://www.flaticon.com)
+* TensorFlow.js library and packages for detecting facial landmarks by [TenserFlow](https://github.com/tensorflow)
+* TensorFlow Expression Model and usage example by [Raphael Mun](https://github.com/raphaelmun)
+* Icons made by [Freepik](https://www.flaticon.com)
 
 ## Install from the Chrome Marketplace
 
